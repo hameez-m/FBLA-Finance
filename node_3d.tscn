@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://beduvckyiy3wf"]
+
+[ext_resource type="PackedScene" uid="uid://cw36va5pdppy6" path="res://Copy of Office Chair (1).glb" id="1_a202f"]
+[ext_resource type="PackedScene" uid="uid://eq3d32jqlx5x" path="res://Brilliant Maimu.glb" id="2_noarx"]
+[ext_resource type="PackedScene" uid="uid://cls1pl476nkmt" path="res://Copy of Shelf.glb" id="3_r3fl7"]
+[ext_resource type="PackedScene" uid="uid://ds3ckcj2vjodp" path="res://Copy of Copy of Dell Laptop.glb" id="4_jka67"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_4xowi"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_a202f"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(20, 0, 0, 0, 1, 0, 0, 0, 42.59947, 0, 0, 0.046518262)
+mesh = SubResource("BoxMesh_4xowi")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.369512e-07, 0, 1, 0, 4.2336144, 0, -9.99628, 0, -4.371139e-08, -5.5044956, 2.4242911, -1.3172119)
+mesh = SubResource("BoxMesh_a202f")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="."]
+transform = Transform3D(12.77984, 0, 0, 0, 4.2336144, 0, 0, 0, 1, -0.30186749, 2.4242911, -5.2009525)
+mesh = SubResource("BoxMesh_a202f")
+
+[node name="Tinkercad GLTF Scene" parent="." instance=ExtResource("1_a202f")]
+transform = Transform3D(33.52753, 0, 33.852573, 0, 46.583683, 0, -33.8793, 0, 33.501087, -0.3708545, 0.492294, -2.9357214)
+
+[node name="Tinkercad GLTF Scene2" parent="." instance=ExtResource("2_noarx")]
+transform = Transform3D(-0.05006125, 0, -3.9853085e-09, 0, 0.039790202, 0, 4.3764934e-09, 0, -0.045586616, -2.2341294, 0.52157694, -1.9206281)
+
+[node name="Tinkercad GLTF Scene3" parent="." instance=ExtResource("3_r3fl7")]
+transform = Transform3D(-1.1255862e-09, 0, 0.028641388, 0, 0.02668979, 0, -0.025750412, 0, -1.2519548e-09, -3.5628028, 0.397398, -1.7702422)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="."]
+transform = Transform3D(1.0165846, 0, 0, 0, 2.774516, 0, 0, 0, 8.259252, 4.9857054, 1.7607598, -0.6875893)
+size = Vector3(1, 2.0579834, 1)
+
+[node name="CSGBox3D" type="CSGBox3D" parent="CSGBox3D2"]
+transform = Transform3D(1.4990543, 0, 0, 0, 0.840341, 0, 0, 0, 0.7888723, 0, 0.33857727, 0)
+operation = 2
+size = Vector3(1, 1.4064941, 1)
+
+[node name="Tinkercad GLTF Scene4" parent="." instance=ExtResource("4_jka67")]
+transform = Transform3D(-2.6974516, 0, -0.90843856, 0, 3.1879892, 0, 1.0598364, 0, -2.3121202, 1.1224225, 1.6348734, -1.8691279)
